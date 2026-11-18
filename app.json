@@ -1,0 +1,105 @@
+{
+  "expo": {
+    "name": "workspace",
+    "slug": "myapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "workspace",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#208AEF",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "프로필 사진과 게시물 등록을 위해 갤러리 접근 권한이 필요합니다.",
+          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권한이 필요합니다."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "직접 사진을 촬영하여 업로드하려면 카메라 접근 권한이 필요합니다.",
+          "microphonePermission": "동영상 녹음을 위해 마이크 접근 권한이 필요합니다.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon02.png",
+          "color": "#ffffff",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "주변 장소 검색 및 위치 기반 서비스를 제공하려면 위치 정보가 권한이 필요합니다."
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "오디오 녹음 및 음석 메세지 기능을 사용하기 위해 마이크 접근 권한이 필요합니다.",
+          "enableBackgroundPlayback": true,
+          "enableBackgroundRecording": false
+        }
+      ],
+      [
+        "expo-file-system",
+        {
+          "supportsOpeningDocumentsInPlace": true,
+          "enableFileSharing": true
+        }
+      ],
+      "expo-sharing",
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
+      ],
+      "expo-video"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "556dab4c-87cc-47a5-96a9-019035b66b7e"
+      }
+    },
+    "owner": "tpghksgit23"
+  }
+}

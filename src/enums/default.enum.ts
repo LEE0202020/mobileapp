@@ -1,0 +1,3 @@
+enum DefaultEnum {
+    DEFAULT = "DEFAULT"
+}
