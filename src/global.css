@@ -10,4 +10,17 @@
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
   --font-serif: Georgia, 'Times New Roman', serif;
+
+  /*
+   * 커스텀 폰트 (assets/fonts). 네이티브(iOS/Android)는 CSS @font-face를 지원하지 않으므로
+   * src/constants/fonts.ts 의 useFonts 로 로드하고, 여기 정의된 패밀리 이름으로 참조합니다.
+   * 웹에서도 useFonts 가 @font-face 를 등록하므로 같은 이름을 사용합니다.
+   * Tailwind 클래스는 tailwind.config.js 의 fontFamily 에 매핑되어 있습니다. (예: font-pretendard-bold)
+   */
+  --font-pretendard: 'Pretendard-Regular', sans-serif;
+  --font-pretendard-bold: 'Pretendard-Bold', sans-serif;
+  --font-nanum-round: 'NanumSquareRound-Regular', sans-serif;
+  --font-nanum-round-bold: 'NanumSquareRound-Bold', sans-serif;
 }
+
+
