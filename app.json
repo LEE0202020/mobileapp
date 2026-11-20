@@ -89,7 +89,9 @@
           "iCloudContainerEnvironment": "Production"
         }
       ],
-      "expo-video"
+      "expo-video",
+      "expo-web-browser",
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true,
